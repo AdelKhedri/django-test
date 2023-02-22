@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {% if post.is_delete == False and post.active %}
+            <li><p>{{post.title}}</p></li>
+            <li><p>{{post.poster}}</p></li>
+            <li><p>{{post.content}}</p></li>
+            <li><p>{{post.publish_time}}</p></li>
+            <li><p>{{post.active}}</p></li>
+            <li><p>{{post.is_delete}}</p></li>
+            <li><p>{{post.author}}</p></li>
+            <li><p>{{post.views}}</p></li>
+            <li><p>{{post.views.count}}</p></li>
+            <li><p>{{post.likes}}</p></li>
+            <li><p>{{post.likes.count}}</p></li>
+        {% elif post.active == False %}
+            <li><p>Tis is post no activated pleas waite</p></li>
+        {% else %}
+            <li><p>Tis is post has deleted</p></li>
+        {% endif %}
+            <!-- <li><h3>Next post : <a href="http://127.0.0.1:8000/posts/{{i.id}}">Go</a></h3></li> -->
+    </ul>
+</body>
+</html>

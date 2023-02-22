@@ -1,0 +1,577 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../b/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="{% static 'b/css/bootstrap.rtl.min.css'%}">    
+    <title>Document</title>
+</head>
+<body dir="rtl" class="bg-light">
+    <div class="" dir="ltr">
+        <nav class="container navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+					<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="/">صفحه اصلی</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/admin/password_change/">تغییر پسورد</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<form id="logout-form" method="post" action="/admin/logout/">
+									<!-- <input type="hidden" name="csrfmiddlewaretoken" value="uD38WIpoiZQRDEtYjpjKE7hQ669lurpP6zIRAUHMWaipUAhODvR10a5tR5kSSAib"> -->
+									<button type="submit">Log out</button>
+								</form>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </div>
+	<div class="py-4">
+		<!-- prifile -->
+		<div class="py-4">
+			<section class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="row">
+							<div class="card bg-secondary pb-3">
+								<!-- pfile demo end -->
+								<div class="row">
+									<ul class="list-group mt-3">
+										<div class="ms-3 me-1 border-start border-5 border-danger">
+											<li class="list-group-item">
+												<div class="row ">
+													<div class="col-md-7">
+														<a class="text-decoration-none" href="http://127.0.0.1:8000/a/user/">
+															<div class="row">
+																<div class="col-12">
+																	<img class="" style="width: 50px; height: 50px;" src="../../../img/img1.png" alt="" srcset="">
+																	<h6 class="d-inline-block">کاربران</h6>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-5 d-flex">
+														<a href="http://127.0.0.1:8000/a/adduser/" class="text-decoration-none">
+															<h6 class="pe-2 pt-3">افزودن</h6>
+														</a>
+														<a href="http://127.0.0.1:8000/a/edituser/" class="text-decoration-none">
+															<h6 class="pt-3">ویرایش</h6>
+														</a>
+													</div>
+												</div>
+											</li>
+										</div>
+											<!-- item active -->
+										<div class="ms-3 me-1">
+											<li class="list-group-item">
+												<div class="row">
+													<div class="col-md-7">
+														<a class="text-decoration-none" href="">
+															<div class="row">
+																<div class="col-12">
+																	<img class="" style="width: 50px; height: 50px;" src="../../../img/img1.png" alt="" srcset="">
+																	<h6 class="d-inline-block">کاربران</h6>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-5 d-flex">
+														<a href="#" class="text-decoration-none">
+															<h6 class="pe-2 pt-3">افزودن</h6>
+														</a>
+														<a href="#" class="text-decoration-none">
+															<h6 class="pt-3">ویرایش</h6>
+														</a>
+													</div>
+												</div>
+											</li>
+										</div>
+										<div class="ms-3 me-1">
+											<li class="list-group-item">
+												<div class="row">
+													<div class="col-md-7">
+														<a class="text-decoration-none" href="">
+															<div class="row">
+																<div class="col-12">
+																	<img class="" style="width: 50px; height: 50px;" src="../../../img/img1.png" alt="" srcset="">
+																	<h6 class="d-inline-block">کاربران</h6>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-5 d-flex">
+														<a href="#" class="text-decoration-none">
+															<h6 class="pe-2 pt-3">افزودن</h6>
+														</a>
+														<a href="#" class="text-decoration-none">
+															<h6 class="pt-3">ویرایش</h6>
+														</a>
+													</div>
+												</div>
+											</li>
+										</div>
+										<div class="ms-3 me-1">
+											<li class="list-group-item">
+												<div class="row">
+													<div class="col-md-7">
+														<a class="text-decoration-none" href="">
+															<div class="row">
+																<div class="col-12">
+																	<img class="" style="width: 50px; height: 50px;" src="../../../img/img1.png" alt="" srcset="">
+																	<h6 class="d-inline-block">کاربران</h6>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-5 d-flex">
+														<a href="#" class="text-decoration-none">
+															<h6 class="pe-2 pt-3">افزودن</h6>
+														</a>
+														<a href="#" class="text-decoration-none">
+															<h6 class="pt-3">ویرایش</h6>
+														</a>
+													</div>
+												</div>
+											</li>
+										</div>
+										<div class="ms-3 me-1">
+											<li class="list-group-item">
+												<div class="row">
+													<div class="col-md-7">
+														<a class="text-decoration-none" href="">
+															<div class="row">
+																<div class="col-12">
+																	<img class="" style="width: 50px; height: 50px;" src="../../../img/img1.png" alt="" srcset="">
+																	<h6 class="d-inline-block">کاربران</h6>
+																</div>
+															</div>
+														</a>
+													</div>
+													<div class="col-md-5 d-flex">
+														<a href="#" class="text-decoration-none">
+															<h6 class="pe-2 pt-3">افزودن</h6>
+														</a>
+														<a href="#" class="text-decoration-none">
+															<h6 class="pt-3">ویرایش</h6>
+														</a>
+													</div>
+												</div>
+											</li>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end profile -->
+                    <div class="col-md-9">
+						<div class="container bg-secondary border rounded-4 p-4 mt-0">
+							<div class="row">
+								<form action="POST">
+									<h6>فیلد های <span class="text-danger">*</span> دار اجباری هستند</h6>
+
+									<div class="col-12">
+										<div class="row">
+											<div class="col-6">
+												<div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="pt-2 pe-4">یوزرنیم: <span class="text-danger">*</span></h6>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="inputPassword2" class="visually-hidden">Username</label>
+                                                        <input type="username" class="form-control" id="inputPassword2" placeholder="Username">
+                                                        <p>میتوانید از @ . + - _ هم استفاده کنید</p>
+                                                    </div>
+                                                </div>
+											</div>
+											<div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="pt-2 pe-4">ایمیل: <span class="text-danger">*</span></h6>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="inputPassword2" class="visually-hidden">name</label>
+                                                        <input type="email" class="form-control" id="inputPassword2" placeholder="email">
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+											</div>
+										</div>
+									</div>
+
+                                    <hr>
+
+									<div class="col-12 mt-4">
+										<div class="row">
+											<div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="pt-2 pe-4">نام: <span class="text-danger">*</span></h6>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="inputPassword2" class="visually-hidden">name</label>
+                                                        <input type="text" class="form-control" id="inputPassword2" placeholder="Username">
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+											</div>
+											<div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="pt-2 pe-4">نام خانوادگی: <span class="text-danger">*</span></h6>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="inputPassword2" class="visually-hidden">last name</label>
+                                                        <input type="text" class="form-control" id="inputPassword2" placeholder="last name">
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+											</div>
+										</div>
+									</div>
+
+                                    <hr>
+
+									<div class="col-12 mt-4">
+										<div class="row">
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        کارمند بودن
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        حذف کاربر بدون حذف اطلاعات آن
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        ادمین بودن
+                                                    </label>
+                                                </div>
+                                            </div>
+										</div>
+									</div>
+
+                                    <hr>
+
+									<div class="col-12 mt-4">
+										<div class="row">
+                                            <div class="col-6">
+                                                <p>مجوز های مجاز برای کاربر</p>
+                                                <div class="overflow-auto" style="height: 400px;width: 400px;">
+                                                    <div class="container p-1 bg-light border rounded-1">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    ادمین بودن
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <p>گروه های مجاز برای کاربر</p>
+                                                <div class="overflow-auto" style="height: 400px;width: 400px;">
+                                                    <div class="container p-1 bg-light border rounded-1">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 1
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 2
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 3
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 4
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 5
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 6
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 7
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 8
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 9
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 10
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 11
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 12
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 13
+                                                                </label>
+                                                            </li>
+                                                            <li class="list-group-item  bg-light">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    گروه 14
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+									</div>
+
+                                    <hr>
+
+                                    <div class="col-12 mt-4">
+										<div class="row">
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        نویسنده بودن
+                                                    </label>
+                                                </div>
+                                            </div>
+										</div>
+									</div>
+
+                                    <div class="col-12 mt-4">
+										<div class="row">
+											<div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="pt-2 pe-4">لول کاربر:‌ <span class="text-danger">*</span></h6>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="inputPassword2" class="visually-hidden">last name</label>
+                                                        <input type="number" class="form-control" id="inputPassword2" placeholder="last name">
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+											</div>
+											<div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="pt-2 pe-4">دسترسی تا:<span class="text-danger">*</span></h6>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h6>تاریخ: </h6>
+                                                                <label for="inputPassword2" class="visually-hidden">last name</label>
+                                                                <input type="number" class="form-control" id="inputPassword2" placeholder="2023-01-10">
+                                                                <p></p>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6>ساعت: </h6>
+                                                                <label for="inputPassword2" class="visually-hidden">last name</label>
+                                                                <input type="number" class="form-control" id="inputPassword2" placeholder="09:39:00">
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+											</div>
+                                            
+										</div>
+									</div>
+
+                                    <hr>
+
+                                    <div class="col-12 mt-4">
+										<div class="row">
+											<div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="pt-2 pe-4">آخرین ورود<span class="text-danger">*</span></h6>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h6>تاریخ: </h6>
+                                                                <label for="inputPassword2" class="visually-hidden">last name</label>
+                                                                <input type="number" class="form-control" id="inputPassword2" placeholder="2023-01-10">
+                                                                <p></p>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6>ساعت: </h6>
+                                                                <label for="inputPassword2" class="visually-hidden">last name</label>
+                                                                <input type="number" class="form-control" id="inputPassword2" placeholder="09:39:00">
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+											</div>
+											<div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h6 class="pt-2 pe-4">زمان ساخت اکانت<span class="text-danger">*</span></h6>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h6>تاریخ: </h6>
+                                                                <label for="inputPassword2" class="visually-hidden">last name</label>
+                                                                <input type="number" class="form-control" id="inputPassword2" placeholder="2023-01-10">
+                                                                <p></p>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h6>ساعت: </h6>
+                                                                <label for="inputPassword2" class="visually-hidden">last name</label>
+                                                                <input type="number" class="form-control" id="inputPassword2" placeholder="09:39:00">
+                                                                <p></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+											</div>
+										</div>
+									</div>
+                                    
+                                    <hr>
+
+                                    <div class="col-12 mt-4">
+										<div class="row">
+											<div class="col-6">
+                                                <div class="col-auto mt-4">
+                                                    <button type="submit" class="btn btn-primary mb-3">ثبت تغییرات</button>
+                                                </div>
+											</div>
+											<div class="col-6">
+                                                <div class="col-auto mt-4">
+                                                    <button type="submit" class="btn btn-primary mb-3">حذف این کاربر</button>
+                                                </div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+    
+    <script src="{% static 'b/js/bootstrap.bundle.min.js'%}"></script>  
+</body>
+</html>

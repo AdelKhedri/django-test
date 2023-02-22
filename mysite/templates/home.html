@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <script type="text/javascript">
+        // var i = {{time}};
+        var i = 1;
+        function increment() {
+            i+=0.0000001;
+            document.getElementById('number').innerHTML = i;
+        }
+        setInterval('increment()', 1500);
+    </script>
+
+<h4 id="number">i</h4>
+<div class="bg-white sticky-top shadow">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="width: 150px;" href="#">My Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+            </div>
+        </div>
+    </nav>
+</div>
+<form action="" method="post">
+    {% csrf_token %}
+    <div>
+        <div>
+            <h4>title: {{searchform.title}}</h4>
+        </div>
+        <div>
+            <h4>content: {{searchform.content}}</h4>
+        </div>
+        <div>
+            <h4>publish_time_hieght: {{searchform.publish_time_hieght}}</h4>
+        </div>
+        <div>
+            <h4>publish_time_low: {{searchform.publish_time_low}}</h4>
+        </div>
+        <div>
+            <h4>active: {{searchform.active}}</h4>
+        </div>
+        <div>
+            <h4>is_delete: {{searchform.is_delete}}</h4>
+        </div>
+        <div>
+            <h4>author: {{searchform.author}}</h4>
+        </div>
+        <div>
+            <h4>views: {{searchform.views}}</h4>
+        </div>
+        <div>
+            <h4>likes: {{searchform.likes}}</h4>
+        </div>
+    </div>
+    <button type="submit">Search</button>
+</form>
+{% if msg %}
+    <h4>{{msg}}</h4>
+{% endif %}
+    {% if user.is_authenticated %}
+        <button><a href="logout/">logout</a></button>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <button><a href="delete_account/">delete account</a></button>
+            <h4 style="display: inline-block;">Keepme</h4>
+            <input type="checkbox" name="keepme" id="keepme">
+            <button type="submit">delete account</button>
+        </form>
+    {% else %}
+        <button><a href="login/">login</a></button>
+        <button><a href="sinup/">Sinup</a></button>
+    {% endif %}
+    <h1>Hello World!</h1>
+    {% for i in context %}
+        {% if i.is_delete == False and i.active %}
+            <ul>
+                <li>
+                    <!-- <h3 class="b">{{i.title}}</h3>
+                    <img src="{{i.poster.url}}" alt="" srcset="">
+                    <h3 >{{i.content}}</h3>
+                    <h3 style="color: black;">{{i.publish_time}}</h3>
+                    {% if i.active == False%}
+                        <h3 style="color: red;">{{i.active}}</h3>
+                    {% else %}
+                        <h3 style="color: green;">{{i.active}}</h3>
+                    {% endif %} -->
+                    <!-- {% if i.is_delete == False%}
+                        <h3 style="color: red;">{{i.is_delete}}</h3>
+                    {% else %}
+                        <h3 style="color: green;">{{i.is_delete}}</h3>
+                    {% endif %} -->
+                    <h3 style="color: blue;">{{i.author.username}}</h3>
+                    <button><a href="reportuser?username={{i.author.username}}">report</a></button>
+                    <!-- <h3 style="color: darkgreen;">{{i.views.count}}</h3>
+                    <h3 style="color: red;">{{i.likes.count}}</h3> -->
+                    <h3>More post ditails : <a href="http://127.0.0.1:8000/posts/{{i.id}}">Go</a></h3>
+                </li>
+            </ul>
+        {% endif %}
+    {% endfor %}
+    <script src="../../static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

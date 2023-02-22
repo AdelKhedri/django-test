@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div>
+            <div>
+                <h4 style="display: inline-block;">title: </h4>
+                <input type="text" name="sear" id="">
+                <h4 style="display: inline-block;">content: </h4>
+                <input type="text" name="content" id="">
+            </div>
+            <div>
+                <h4 style="display: inline-block;">point: </h4>
+                <input type="text" name="point" id="">
+                <!-- <h4 style="display: inline-block;">content: </h4>
+                <input type="text" name="sear" id=""> -->
+                <input type="submit" value="go">
+            </div>
+        </div>
+    </form>
+    <h4>{{search_res}}</h4>
+    {% if orm_all %}
+        {% for i in orm_all %}
+            <ul>
+            
+            <!-- <h5>poster: </h5>
+            <img src="{{i.poster.url}}" alt=""> -->
+            
+            <!-- <h5>time: </h5>
+            <h4>{{i.publish_time}}</h4> -->
+            
+            <!-- <h5>likes: </h5>
+            <h4>{{i.likes.count}}</h4> -->
+            
+                <li>
+                    <!-- <h5>title: </h5> -->
+                    <h4 style="color: blue;">{{i.title}}</h4>
+                </li>
+                <li>
+                    <!-- <h5>content: </h5> -->
+                    <h4>{{i.content}}</h4>
+                </li>
+                <li>
+                    <!-- <h5>author: </h5> -->
+                    <h4>{{i.author}}</h4>
+                </li>
+                <li>
+                    <!-- <h5>views: </h5> -->
+                    <h4>{{i.views.count}}</h4>
+                </li>
+            </ul>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>

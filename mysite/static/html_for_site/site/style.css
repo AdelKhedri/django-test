@@ -1,0 +1,9 @@
+.color-900 {
+    color: var(--color-neutral-900);
+}
+.color-500 {
+    color: var(--color-neutral-500);
+}
+body{
+    font-family: 'Samim';
+}

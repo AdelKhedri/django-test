@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST"enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            {% if msg_u %}
+                <h4 style="color: red;">Username is not exist</h4>
+            {% endif %}
+            <h5 style="display: inline-block; margin-right: 20px;">username :</h5>
+            <input type="username" name="username" id="">
+        </div>
+        <div>
+            {% if msg_p %}
+                <h4 style="color: red;">Password is woring</h4>
+            {% endif %}
+            <h5 style="display: inline-block; margin-right: 20px;">Password :</h5>
+            <input type="password" name="password" id="">
+        </div>
+        <div>
+            <input type="file" name="pik1">
+            <!-- <input type="file" name="pik2"> -->
+        </div>
+        <button style="margin-left: 210px;" type="submit">Login</button>
+        {% if msg_p %}
+            <a href="#">Forget password</a>
+        {% endif %}
+        {% if msg_u %}
+            <a href="#">Create account</a>
+        {% endif %}
+    </form>
+</body>
+</html>
